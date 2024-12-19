@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saved</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="desk-nav">
+            <div class="nav-left">
+                <div class="logo rk-social-logo"></div>
+                <div class="searchbox">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" placeholder="Search Your Friends">
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li class="mid-icon"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="mid-icon"><a href="friend.html"><i class="fa-solid fa-user-group"></i></a></li>
+                    <li class="mid-icon"><a href="video.html"><i class="fa-solid fa-tv"></i></a></li>
+                    <li class="mid-icon"><a href="group.html"><i class="fa-solid fa-people-group"></i></a></li>
+                    <li class="mid-icon"><a href="game.html"><i class="fa-solid fa-gamepad"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="right-icon" onclick="MoremenuToggle()"><i class="fa-solid fa-braille"></i></li>
+                    <li class="right-icon xyz" onclick="MassengermenuToggle()"><iclass="fa-brands fa-facebook-messenger"></i></li>
+                    <li class="right-icon xyz" onclick="notificationMenuToggle()"><i class="fa-solid fa-bell"></i></li>
+                    <li class="right-icon xyz profile-pic" onclick="SettingmenuToggle()"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- menu name  -->
+        <div class="more-menu">
+            <div class="menu-text">
+                Menu
+            </div>
+            <div class="more-menu1">
+                <div class="menu-left">
+                    <div class="menu-left1">
+                        <div class="input">
+                            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <input type="text" placeholder="Search Menu">
+                        </div>
+                        <div class="social">
+                            Social
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon event-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">Event</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon ff-icon"><i class="fa-solid fa-user-plus"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">Find Friend</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon mgroup-icon"><i class="fa-solid fa-user-group"></i></div>
+                            <div class="evenmenu-text ">
+                                <div class="event-text1">Group</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon news-icon"><i class="fa-regular fa-newspaper"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">News Feed</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon pages-icon"><i class="fa-solid fa-flag"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">Pages</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="menu-right1">
+                        <div class="create">Create</div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+                            <div class="post-menu">Post</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="post-menu">Story</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-hashtag"></i></div>
+                            <div class="post-menu">Reel</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="post-menu">Life Event</div>
+                        </div>
+                        <hr>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-flag"></i></div>
+                            <div class="post-menu">Page</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+                            <div class="post-menu">Ad</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-user-group"></i></div>
+                            <div class="post-menu">Group</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="post-menu">event</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="massenger-menu">
+            <div class="hit"></div>
+
+        </div>
+        <div class="notification">
+            <div class="n-div1">
+                <div class="notification-div">
+                    <p>notification</p>
+                    <div class="profile2-logo"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="n-all">
+                    <div class="all">All</div>
+                    <div class="allb">Unreade</div>
+                </div>
+                <div class="earli-div">
+                    <div class="early">Early</div>
+                    <div class="s-all">See All</div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Anurag</b></div>
+                        <div class="text2">20 Mint ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Akash KUmar</b></div>
+                        <div class="text2">59 Mint ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Harshwardhan</b></div>
+                        <div class="text2">2 Day ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Kajal Kumari</b></div>
+                        <div class="text2">10 Day ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Naresh</b></div>
+                        <div class="text2">2 Month ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="setting-menu">
+            <div class="setting-div">
+                <div class="setting-profile">
+                    <div class="profile-name">
+                        <div class="page-pro profile-pic"></div>
+                        <div class="page-pro-name">Raja Yadav</div>
+                    </div>
+                    <hr>
+                    <div class="profile-name">
+                        <div class="page-pro rk-creaction"></div>
+                        <div class="page-pro-name">RK Creation</div>
+                    </div>
+                    <hr>
+                    <div class="all-Profile">
+                        <div class="all2">
+                            <p>All Profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-gear"></i></div>
+                <p>Setting & Privacy</p>
+                <div class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-circle-question"></i></div>
+                <p>Help & Center</p>
+                <div class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-moon"></i></div>
+                <p>Display & Accessibility</p>
+                <div class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                <p>Give Feedback</p>
+                <div class="arrow-icon"></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+                <p>Log Out</p>
+                <div class="arrow-icon"></div>
+            </div>
+            <div class="intro">
+                <p>
+                    This Social Medial Is Created By Raja Yadav
+                </p>
+            </div>
+
+        </div>
+    </nav>
+    <div class="friend-main">
+        <div class="friend-main-left">
+            <div class="friends-main-top">
+                <div class="friend-right-top">
+                    <p>Saved</p>
+                    <div class="p22"><i class="fa-solid fa-gear"></i></div>
+                </div>
+                <hr>
+                <div class="friend-request-div frd2">
+                    <div class="friend-request-div-left">
+                        <div class="p22"><i class="fa-solid fa-user-group"></i></div>
+                        <p>Discovery</p>
+                    </div>
+                </div>
+                <div class="friend-request-div frd4">
+                    <div class="friend-request-div-left">
+                        <div class="p22"><i class="fa-solid fa-user-group"></i></div>
+                        <p>Your Group</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+        </div>
+        <div class="friend-main-right">
+            <div class="friend-main-right2"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

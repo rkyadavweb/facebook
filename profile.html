@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="desk-nav">
+            <div class="nav-left">
+                <div class="logo rk-social-logo"></div>
+                <div class="searchbox">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" placeholder="Search Your Friends">
+                </div>
+            </div>
+            <div class="nav-center">
+                <ul>
+                    <li class="mid-icon"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="mid-icon"><a href="friend.html"><i class="fa-solid fa-user-group"></i></a></li>
+                    <li class="mid-icon"><a href="video.html"><i class="fa-solid fa-tv"></i></a></li>
+                    <li class="mid-icon"><a href="group.html"><i class="fa-solid fa-people-group"></i></a></li>
+                    <li class="mid-icon"><a href="game.html"><i class="fa-solid fa-gamepad"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="right-icon" onclick="MoremenuToggle()"><i class="fa-solid fa-braille"></i></li>
+                    <li class="right-icon xyz" onclick="MassengermenuToggle()"><iclass="fa-brands fa-facebook-messenger"></i></li>
+                    <li class="right-icon xyz" onclick="notificationMenuToggle()"><i class="fa-solid fa-bell"></i></li>
+                    <li class="right-icon xyz profile-pic" onclick="SettingmenuToggle()"></li>
+                </ul>
+            </div>
+        </div>
+        <!-- menu name  -->
+        <div class="more-menu">
+            <div class="menu-text">
+                Menu
+            </div>
+            <div class="more-menu1">
+                <div class="menu-left">
+                    <div class="menu-left1">
+                        <div class="input">
+                            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <input type="text" placeholder="Search Menu">
+                        </div>
+                        <div class="social">
+                            Social
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon event-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">Event</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon ff-icon"><i class="fa-solid fa-user-plus"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">Find Friend</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon mgroup-icon"><i class="fa-solid fa-user-group"></i></div>
+                            <div class="evenmenu-text ">
+                                <div class="event-text1">Group</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon news-icon"><i class="fa-regular fa-newspaper"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">News Feed</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                        <div class="event-menu">
+                            <div class="eventmenu-icon pages-icon"><i class="fa-solid fa-flag"></i></div>
+                            <div class="evenmenu-text">
+                                <div class="event-text1">Pages</div>
+                                <div class="event-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Veniam, nostrum.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-right">
+                    <div class="menu-right1">
+                        <div class="create">Create</div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-regular fa-pen-to-square"></i></div>
+                            <div class="post-menu">Post</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="post-menu">Story</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-hashtag"></i></div>
+                            <div class="post-menu">Reel</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="post-menu">Life Event</div>
+                        </div>
+                        <hr>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-flag"></i></div>
+                            <div class="post-menu">Page</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+                            <div class="post-menu">Ad</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-solid fa-user-group"></i></div>
+                            <div class="post-menu">Group</div>
+                        </div>
+                        <div class="menu-post">
+                            <div class="post-icon"><i class="fa-regular fa-calendar-check"></i></div>
+                            <div class="post-menu">event</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="massenger-menu">
+            <div class="hit"></div>
+
+        </div>
+        <div class="notification">
+            <div class="n-div1">
+                <div class="notification-div">
+                    <p>notification</p>
+                    <div class="profile2-logo"><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+                <div class="n-all">
+                    <div class="all">All</div>
+                    <div class="allb">Unreade</div>
+                </div>
+                <div class="earli-div">
+                    <div class="early">Early</div>
+                    <div class="s-all">See All</div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Anurag</b></div>
+                        <div class="text2">20 Mint ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Akash KUmar</b></div>
+                        <div class="text2">59 Mint ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Harshwardhan</b></div>
+                        <div class="text2">2 Day ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Kajal Kumari</b></div>
+                        <div class="text2">10 Day ago</div>
+                    </div>
+                </div>
+                <div class="notification1-div">
+                    <div class="nlogo"></div>
+                    <div class="ntext">
+                        <div class="maintext">You Have New Friend Suggestion; <br> <b>Naresh</b></div>
+                        <div class="text2">2 Month ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="setting-menu">
+            <div class="setting-div">
+                <div class="setting-profile">
+                    <div class="profile-name">
+                        <div class="page-pro profile-pic"></div>
+                        <div class="page-pro-name">Raja Yadav</div>
+                    </div>
+                    <hr>
+                    <div class="profile-name">
+                        <div class="page-pro rk-creaction"></div>
+                        <div class="page-pro-name">RK Creation</div>
+                    </div>
+                    <hr>
+                    <div class="all-Profile">
+                        <div class="all2">
+                            <p>All Profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-gear"></i></div>
+                <p>Setting & Privacy</p>
+                <div class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-circle-question"></i></div>
+                <p>Help & Center</p>
+                <div class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-moon"></i></div>
+                <p>Display & Accessibility</p>
+                <div class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                <p>Give Feedback</p>
+                <div class="arrow-icon"></div>
+            </div>
+            <div class="setting-more">
+                <div class="slogo-icon"><i class="fa-solid fa-right-from-bracket"></i></div>
+                <p>Log Out</p>
+                <div class="arrow-icon"></div>
+            </div>
+            <div class="intro">
+                <p>
+                    This Social Medial Is Created By Raja Yadav
+                </p>
+            </div>
+
+        </div>
+    </nav>
+    <div class="pro-page-main">
+        <div class="cover-section">
+            <div class="cover-pic">
+                <div class="cover-cam">
+                    <p><i class="fa-solid fa-camera"></i> Add Cover Photo</p>
+                </div>
+            </div>
+            <div class="profile-pic cover-profile"></div>
+            <div class="camera-icon"><i class="fa-solid fa-camera"></i></div>
+            <div class="cover-down">
+                <div class="cover-down1">
+                    <div class="left-cover">
+                        <div class="name-text">Raja Yadav</div>
+                        <p> 20 Friend</p>
+                    </div>
+                    <div class="right-cover">
+                        <div class="div-right div-right1"><i class="fa-solid fa-plus"></i> Add to story</div>
+                        <div class="div-right"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</div>
+                        <div class="div-right"><i class="fa-solid fa-chevron-up"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="people">
+        <div class="text-div">
+            <p>People You May Know</p>
+            <div class="more"><i class="fa-solid fa-ellipsis"></i></div>
+        </div>
+        <div class="people-div profile-people">
+            <div class="people-detail-div">
+                <div class="people-pic people-pic1"></div>
+                <div class="people-info">
+                    <div class="name">Ajay Kumar (BABA)</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic2"></div>
+                <div class="people-info">
+                    <div class="name">Ankit Yadav</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic3"></div>
+                <div class="people-info">
+                    <div class="name">Prit Raj Paswan</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic1"></div>
+                <div class="people-info">
+                    <div class="name">Ajay Kumar (BABA)</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic2"></div>
+                <div class="people-info">
+                    <div class="name">Ankit Yadav</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic3"></div>
+                <div class="people-info">
+                    <div class="name">Prit Raj Paswan</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic1"></div>
+                <div class="people-info">
+                    <div class="name">Ajay Kumar (BABA)</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic2"></div>
+                <div class="people-info">
+                    <div class="name">Ankit Yadav</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+            <div class="people-detail-div">
+                <div class="people-pic people-pic3"></div>
+                <div class="people-info">
+                    <div class="name">Prit Raj Paswan</div>
+                    <div class="add-friend">
+                        <div class="friend-icon"><i class="fa-solid fa-user-plus"></i></div>
+                        <p>Add Friend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="hr">
+        <hr>
+    </div>
+    <div class="profile-nav">
+        <div class="profile-nav-left">
+            <ul>
+                <li>Post</li>
+                <li>About</li>
+                <li>Friend</li>
+                <li>Photo</li>
+                <li>Cideo</li>
+                <li>Check-ins</li>
+                <li>more <i class="fa-solid fa-caret-down"></i></li>
+            </ul>
+        </div>
+        <div class="profile-nav-right"><i class="fa-solid fa-ellipsis"></i></div>
+    </div>
+    <div class="profile-main">
+        <div class="profile-main-left">
+            <div class="securty">
+                <div class="securty-left"><i class="fa-solid fa-user-lock"></i></div>
+                <div class="securty-right">
+                    <div class="securty-text">you'he lock your Profile</div>
+                    <p>learn more</p>
+                </div>
+            </div>
+            <div class="intro-profile">
+                <p>Intro</p>
+                <div class="bio-div">Add Bio</div>
+                <div class="bio-div">Edits Details</div>
+                <div class="bio-div">Add Features</div>
+            </div>
+            <div class="profile-photo">
+                <div class="photo-name">
+                    <div class="photo-name1">Photo</div>
+                    <p>See All Photo</p>
+                </div>
+                <div class="photo-photo">
+                    <div class="photo2-div photo2-div1"></div>
+                    <div class="photo2-div photo2-div2"></div>
+                    <div class="photo2-div photo2-div3"></div>
+                    <div class="photo2-div photo2-div4"></div>
+                    <div class="photo2-div photo2-div5"></div>
+                </div>
+            </div>
+            <div class="profile-friends">
+                <div class="photo-name">
+                    <div class="photo-name1">Friends</div>
+                    <p>See All Friends</p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-main-right">
+            <div class="profile-main-right-post">
+                <div class="new-post profile-post2">
+                    <div class="newpost-top">
+                        <div class="logo profile-pic"></div>
+                        <input type="text" class="newpost" placeholder="What's Your Mood?">
+                    </div>
+                    <div class="newpost-down">
+                        <div class="live">
+                            <div class="live-icon"><i class="fa-solid fa-video"></i></div>
+                            <p>Live Video</p>
+                        </div>
+                        <div class="photo">
+                            <div class="photo-icon"><i class="fa-solid fa-photo-film"></i></div>
+                            <p>Photo/Video</p>
+                        </div>
+                        <div class="fealing">
+                            <div class="fealing-icon"><i class="fa-regular fa-face-smile"></i></div>
+                            <p>Feeling/Activity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-post3 profile-post2">
+                <div class="post">
+                    <div class="post-name">
+                        <div class="post-logo profile-pic"></div>
+                        <div class="post-name-div">
+                            <div class="p">Raja Yadav</div>
+                            <p>2 hour ago</p>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="post-text">Lorem ipsum dolor sit amet.</div>
+                    <div class="post-pic post-pic1 post-pic2"></div>
+                    <div class="post-down1">
+                        <div class="post-down-left">
+                            <div class="pd-icon"><i class="fa-solid fa-thumbs-up"></i> 5000</div>
+                        </div>
+                        <div class="post-down-right">
+                            <div class="pd-icon">100<i class="fa-regular fa-comment"></i></div>
+                            <div class="pd-icon">300 <i class="fa-solid fa-share"></i></div>
+
+                        </div>
+                    </div>
+                    <div class="post-down">
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                            <p>like</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-regular fa-comment"></i></div>
+                            <p>Comment</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-share"></i></div>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-post3">
+                <div class="post">
+                    <div class="post-name">
+                        <div class="post-logo profile-pic"></div>
+                        <div class="post-name-div">
+                            <div class="p">Raja Yadav</div>
+                            <p>5 week ago</p>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum illo voluptatem obcaecati pariatur. Sint earum illo enim ratione libero.</div>
+                    <div class="post-down1">
+                        <div class="post-down-left">
+                            <div class="pd-icon"><i class="fa-solid fa-thumbs-up"></i> 1800</div>
+                        </div>
+                        <div class="post-down-right">
+                            <div class="pd-icon">500<i class="fa-regular fa-comment"></i></div>
+                            <div class="pd-icon">340 <i class="fa-solid fa-share"></i></div>
+    
+                        </div>
+                    </div>
+                    <div class="post-down">
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                            <p>like</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-regular fa-comment"></i></div>
+                            <p>Comment</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-share"></i></div>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-post3">
+                <div class="post">
+                    <div class="post-name">
+                        <div class="post-logo profile-pic"></div>
+                        <div class="post-name-div">
+                            <div class="p">Raja Yadav</div>
+                            <p>5 week ago</p>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe, cum quaerat suscipit corrupti facere nostrum enim. Praesentium nisi dolore harum ducimus saepe! Saepe pariatur dolorum minima iusto, quod ipsum!</div>
+                    <div class="post-down1">
+                        <div class="post-down-left">
+                            <div class="pd-icon"><i class="fa-solid fa-thumbs-up"></i> 1800</div>
+                        </div>
+                        <div class="post-down-right">
+                            <div class="pd-icon">500<i class="fa-regular fa-comment"></i></div>
+                            <div class="pd-icon">340 <i class="fa-solid fa-share"></i></div>
+    
+                        </div>
+                    </div>
+                    <div class="post-down">
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                            <p>like</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-regular fa-comment"></i></div>
+                            <p>Comment</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-share"></i></div>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-post3">
+                <div class="post">
+                    <div class="post-name">
+                        <div class="post-logo profile-pic"></div>
+                        <div class="post-name-div">
+                            <div class="p">Raja Yadav</div>
+                            <p>5 week ago</p>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sint tenetur expedita totam debitis? Repellendus qui tenetur dignissimos nesciunt laborum iusto dolorum ipsa quas quam? Facilis ducimus laudantium non nostrum maxime, quia accusamus voluptas deleniti tenetur dolorum, beatae at sapiente aliquam accusantium? Neque sit accusamus odit quisquam dolorem! Alias, eaque?</div>
+                    <div class="post-down1">
+                        <div class="post-down-left">
+                            <div class="pd-icon"><i class="fa-solid fa-thumbs-up"></i> 1800</div>
+                        </div>
+                        <div class="post-down-right">
+                            <div class="pd-icon">500<i class="fa-regular fa-comment"></i></div>
+                            <div class="pd-icon">340 <i class="fa-solid fa-share"></i></div>
+    
+                        </div>
+                    </div>
+                    <div class="post-down">
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                            <p>like</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-regular fa-comment"></i></div>
+                            <p>Comment</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-share"></i></div>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-post3">
+                <div class="post">
+                    <div class="post-name">
+                        <div class="post-logo profile-pic"></div>
+                        <div class="post-name-div">
+                            <div class="p">Raja Yadav</div>
+                            <p>5 week ago</p>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-ellipsis"></i></div>
+                        <div class="icon"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum illo voluptatem obcaecati pariatur. Sint earum illo enim ratione libero.</div>
+                    <div class="post-down1">
+                        <div class="post-down-left">
+                            <div class="pd-icon"><i class="fa-solid fa-thumbs-up"></i> 1800</div>
+                        </div>
+                        <div class="post-down-right">
+                            <div class="pd-icon">500<i class="fa-regular fa-comment"></i></div>
+                            <div class="pd-icon">340 <i class="fa-solid fa-share"></i></div>
+    
+                        </div>
+                    </div>
+                    <div class="post-down">
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+                            <p>like</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-regular fa-comment"></i></div>
+                            <p>Comment</p>
+                        </div>
+                        <div class="like">
+                            <div class="like-icon"><i class="fa-solid fa-share"></i></div>
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
